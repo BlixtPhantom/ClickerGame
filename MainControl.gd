@@ -24,7 +24,7 @@ func _ready():
 		addsilver()
 	)
 	
-	$"Copper Button/Upgrade Copper".pressed.connect(func():
+	$"Upgrade Copper".pressed.connect(func():
 		if silver > 5:
 			silver -= 5
 			print("You have spent 5 silver you now have ", silver, " silver")
@@ -35,6 +35,6 @@ func _ready():
 			print("You do not have da funds for dat mon")
 	)
 	
-	$"Silver Button/Upgrade Silver".pressed.connect(func():
+	$"Upgrade Silver".pressed.connect(func():
 		pass
 	)

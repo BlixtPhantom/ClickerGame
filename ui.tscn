@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfymmnnuxg6ns"]
+[gd_scene load_steps=3 format=3 uid="uid://dfymmnnuxg6ns"]
 
 [ext_resource type="Texture2D" uid="uid://dphqi8ahoikwa" path="res://ART/icon.svg" id="1_fuvrp"]
 [ext_resource type="Script" path="res://MainControl.gd" id="1_t6p24"]
-[ext_resource type="Theme" uid="uid://dniddahnbh6ad" path="res://Buttons.tres" id="2_ir8kg"]
-[ext_resource type="Texture2D" uid="uid://bbj5od14unjre" path="res://ART/GoldButton.png" id="2_rbvjq"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -16,19 +14,10 @@ script = ExtResource("1_t6p24")
 
 [node name="Copper Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 183.0
-offset_top = 83.0
-offset_right = 447.0
-offset_bottom = 347.0
-theme = ExtResource("2_ir8kg")
-icon = ExtResource("2_rbvjq")
-
-[node name="Upgrade Copper" type="Button" parent="Copper Button"]
-layout_mode = 0
-offset_left = 72.0
-offset_top = 288.0
-offset_right = 208.0
-offset_bottom = 424.0
+offset_left = 258.0
+offset_top = 107.0
+offset_right = 394.0
+offset_bottom = 243.0
 icon = ExtResource("1_fuvrp")
 
 [node name="Silver Button" type="Button" parent="."]
@@ -37,14 +26,6 @@ offset_left = 545.0
 offset_top = 110.0
 offset_right = 681.0
 offset_bottom = 246.0
-icon = ExtResource("1_fuvrp")
-
-[node name="Upgrade Silver" type="Button" parent="Silver Button"]
-layout_mode = 0
-offset_left = -3.0
-offset_top = 159.0
-offset_right = 133.0
-offset_bottom = 295.0
 icon = ExtResource("1_fuvrp")
 
 [node name="CopperLabel" type="Label" parent="."]
@@ -60,3 +41,19 @@ offset_left = 114.0
 offset_top = 129.0
 offset_right = 154.0
 offset_bottom = 152.0
+
+[node name="Upgrade Copper" type="Button" parent="."]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 277.0
+offset_right = 393.0
+offset_bottom = 413.0
+icon = ExtResource("1_fuvrp")
+
+[node name="Upgrade Silver" type="Button" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 277.0
+offset_right = 530.0
+offset_bottom = 413.0
+icon = ExtResource("1_fuvrp")
