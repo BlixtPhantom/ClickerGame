@@ -10,6 +10,7 @@ func addcopper():
 	copper += copperadd
 	print("You have ", copper, " copper")
 	$CopperLabel
+	#This is a test for github integration between mac and windows
 
 func addsilver():
 	silver += silveradd
