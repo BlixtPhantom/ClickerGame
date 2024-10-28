@@ -11,7 +11,7 @@ func addcopper():
 	print("You have ", copper, " copper")
 	$CopperLabel
 	#This is a test for github integration between mac and windows
-
+	#THIS IS A TEST
 func addsilver():
 	silver += silveradd
 	print("You have ", silver, " silver")
