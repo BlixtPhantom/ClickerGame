@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfymmnnuxg6ns"]
+
+[ext_resource type="Texture2D" uid="uid://dphqi8ahoikwa" path="res://icon.svg" id="1_fuvrp"]
+[ext_resource type="Script" path="res://MainControl.gd" id="1_t6p24"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t6p24")
+
+[node name="Copper Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 111.0
+offset_right = 391.0
+offset_bottom = 247.0
+icon = ExtResource("1_fuvrp")
+
+[node name="Upgrade Copper" type="Button" parent="Copper Button"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 153.0
+offset_right = 137.0
+offset_bottom = 289.0
+icon = ExtResource("1_fuvrp")
+
+[node name="Silver Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 110.0
+offset_right = 681.0
+offset_bottom = 246.0
+icon = ExtResource("1_fuvrp")
+
+[node name="Upgrade Silver" type="Button" parent="Silver Button"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 159.0
+offset_right = 133.0
+offset_bottom = 295.0
+icon = ExtResource("1_fuvrp")
+
+[node name="CopperLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 58.0
+offset_right = 398.0
+offset_bottom = 84.0
+
+[node name="SilverLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 129.0
+offset_right = 154.0
+offset_bottom = 152.0
