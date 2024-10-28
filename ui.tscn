@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfymmnnuxg6ns"]
+[gd_scene load_steps=4 format=3 uid="uid://dfymmnnuxg6ns"]
 
 [ext_resource type="Texture2D" uid="uid://dphqi8ahoikwa" path="res://ART/icon.svg" id="1_fuvrp"]
 [ext_resource type="Script" path="res://MainControl.gd" id="1_t6p24"]
+[ext_resource type="Texture2D" uid="uid://bbj5od14unjre" path="res://ART/GoldButton.jpg" id="2_rbvjq"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -14,18 +15,18 @@ script = ExtResource("1_t6p24")
 
 [node name="Copper Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 276.0
-offset_top = 111.0
-offset_right = 412.0
-offset_bottom = 247.0
-icon = ExtResource("1_fuvrp")
+offset_left = 183.0
+offset_top = 83.0
+offset_right = 447.0
+offset_bottom = 347.0
+icon = ExtResource("2_rbvjq")
 
 [node name="Upgrade Copper" type="Button" parent="Copper Button"]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 153.0
-offset_right = 137.0
-offset_bottom = 289.0
+offset_left = 72.0
+offset_top = 288.0
+offset_right = 208.0
+offset_bottom = 424.0
 icon = ExtResource("1_fuvrp")
 
 [node name="Silver Button" type="Button" parent="."]
