@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_t6p24")
 
-[node name="Copper Button" type="Button" parent="."]
+[node name="Phantom Tokens Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 258.0
 offset_top = 107.0
@@ -20,40 +20,10 @@ offset_right = 394.0
 offset_bottom = 243.0
 icon = ExtResource("1_fuvrp")
 
-[node name="Silver Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 545.0
-offset_top = 110.0
-offset_right = 681.0
-offset_bottom = 246.0
-icon = ExtResource("1_fuvrp")
-
-[node name="CopperLabel" type="Label" parent="."]
+[node name="Phantom Tokens Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 252.0
-offset_top = 58.0
-offset_right = 398.0
-offset_bottom = 84.0
-
-[node name="SilverLabel" type="Label" parent="."]
-layout_mode = 0
-offset_left = 114.0
-offset_top = 129.0
-offset_right = 154.0
-offset_bottom = 152.0
-
-[node name="Upgrade Copper" type="Button" parent="."]
-layout_mode = 0
-offset_left = 257.0
-offset_top = 277.0
-offset_right = 393.0
-offset_bottom = 413.0
-icon = ExtResource("1_fuvrp")
-
-[node name="Upgrade Silver" type="Button" parent="."]
-layout_mode = 0
-offset_left = 394.0
-offset_top = 277.0
-offset_right = 530.0
-offset_bottom = 413.0
-icon = ExtResource("1_fuvrp")
+offset_top = 73.0
+offset_right = 400.0
+offset_bottom = 109.0
+text = "Phantom Tokens: 0"

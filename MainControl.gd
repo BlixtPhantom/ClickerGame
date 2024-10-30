@@ -1,40 +1,19 @@
 extends Control
 
-var copper = 0
-var copperadd = 1
-var silver = 0
-var silveradd = 1
+var phantomTokens = 0.0
+var phantomTokensAdd = .01
+var multiplier = .01
 
 
-func addcopper():
-	copper += copperadd
-	print("You have ", copper, " copper")
-	$CopperLabel
+func addPhantomTokens(multiplier):
+	phantomTokens += phantomTokensAdd * (multiplier)
 	
-func addsilver():
-	silver += silveradd
-	print("You have ", silver, " silver")
+	print("Phantom Tokens: ", "%6.2f" % phantomTokens)
+	print("Your multiplier: ", "%6.2f" % multiplier)
+	$"Phantom Tokens Label".text = str("PhantomTokens: " , "%6.2f" % phantomTokens)
 
 func _ready():
-	$"Copper Button".pressed.connect(func():
-		addcopper()
-	)
-	
-	$"Silver Button".pressed.connect(func():
-		addsilver()
-	)
-	
-	$"Upgrade Copper".pressed.connect(func():
-		if silver > 5:
-			silver -= 5
-			print("You have spent 5 silver you now have ", silver, " silver")
-			print("You have upgraded copper generation!")
-			copperadd += 1
-		
-		else:
-			print("You do not have da funds for dat mon")
-	)
-	
-	$"Upgrade Silver".pressed.connect(func():
-		pass
+	$"Phantom Tokens Button".pressed.connect(func():
+		multiplier += .01
+		addPhantomTokens(multiplier)
 	)
