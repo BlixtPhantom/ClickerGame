@@ -20,6 +20,9 @@ offset_right = 394.0
 offset_bottom = 243.0
 icon = ExtResource("1_fuvrp")
 
+[node name="Multiplier Timer" type="Timer" parent="Phantom Tokens Button"]
+wait_time = 2.5
+
 [node name="Phantom Tokens Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 252.0
@@ -27,3 +30,5 @@ offset_top = 73.0
 offset_right = 400.0
 offset_bottom = 109.0
 text = "Phantom Tokens: 0"
+
+[connection signal="timeout" from="Phantom Tokens Button/Multiplier Timer" to="." method="_on_multiplier_timer_timeout"]
