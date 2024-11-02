@@ -25,11 +25,11 @@ func _ready():
 	# This starts a timer and attempts to increase the multiplier based on random chance
 	$"Phantom Tokens Button".pressed.connect(func():
 		$"Phantom Tokens Button/Multiplier Timer".start()  # Starts a timer that resets the multiplier
-		var chance_multiplier = rng.randi_range(1, 20)  # Generates a random number between 1 and 20
+		var chance_multiplier = rng.randi_range(1, 10)  # Generates a random number between 1 and 10
 		
 		# If the random number is 5, slightly increase the multiplier
 		if chance_multiplier == 5:
-			multiplier += 0.01
+			multiplier += 0.1
 		add_phantom_tokens()  # Adds phantom tokens with the current multiplier
 	)
 
