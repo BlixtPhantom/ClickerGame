@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfymmnnuxg6ns"]
+[gd_scene load_steps=4 format=3 uid="uid://dfymmnnuxg6ns"]
 
-[ext_resource type="Texture2D" uid="uid://dphqi8ahoikwa" path="res://ART/icon.svg" id="1_fuvrp"]
 [ext_resource type="Script" path="res://MainControl.gd" id="1_t6p24"]
-[ext_resource type="Texture2D" uid="uid://cbvjs51sv6m1l" path="res://ART/Button.png" id="2_gn4vb"]
+[ext_resource type="Texture2D" uid="uid://cj3nybny7r0qt" path="res://ART/ButtonIpad.png" id="2_iyrad"]
 [ext_resource type="Texture2D" uid="uid://e843fch70816" path="res://ART/ButtonPressed.png" id="3_uhdul"]
 
 [node name="UI" type="Control"]
@@ -19,11 +18,11 @@ script = ExtResource("1_t6p24")
 layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 416.0
+offset_left = 335.0
 offset_top = 135.0
-offset_right = -633.0
-offset_bottom = -441.0
-texture_normal = ExtResource("2_gn4vb")
+offset_right = -561.0
+offset_bottom = -257.0
+texture_normal = ExtResource("2_iyrad")
 texture_pressed = ExtResource("3_uhdul")
 
 [node name="Multiplier Timer" type="Timer" parent="Phantom Tokens Button"]
@@ -38,21 +37,5 @@ offset_top = 92.0
 offset_right = -479.0
 offset_bottom = -433.0
 text = "Phantom Tokens: 0"
-
-[node name="TabContainer" type="TabContainer" parent="."]
-layout_mode = 0
-offset_left = 204.0
-offset_top = 248.0
-offset_right = 1008.0
-offset_bottom = 591.0
-tab_alignment = 1
-
-[node name="Clicker" type="TextureButton" parent="TabContainer"]
-layout_mode = 2
-texture_normal = ExtResource("1_fuvrp")
-
-[node name="Store" type="TextureButton" parent="TabContainer"]
-visible = false
-layout_mode = 2
 
 [connection signal="timeout" from="Phantom Tokens Button/Multiplier Timer" to="." method="_on_multiplier_timer_timeout"]
