@@ -1,14 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfymmnnuxg6ns"]
+[gd_scene load_steps=3 format=3 uid="uid://dfymmnnuxg6ns"]
 
 [ext_resource type="Script" path="res://MainControl.gd" id="1_t6p24"]
 [ext_resource type="Texture2D" uid="uid://cj3nybny7r0qt" path="res://ART/ButtonIpad.png" id="2_iyrad"]
-[ext_resource type="Texture2D" uid="uid://e843fch70816" path="res://ART/ButtonPressed.png" id="3_uhdul"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -10.0
+offset_top = -6.0
+offset_right = -10.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -23,7 +26,6 @@ offset_top = 135.0
 offset_right = -561.0
 offset_bottom = -257.0
 texture_normal = ExtResource("2_iyrad")
-texture_pressed = ExtResource("3_uhdul")
 
 [node name="Multiplier Timer" type="Timer" parent="Phantom Tokens Button"]
 wait_time = 2.5
@@ -34,8 +36,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 362.0
 offset_top = 92.0
-offset_right = -479.0
-offset_bottom = -433.0
+offset_right = -639.0
+offset_bottom = -533.0
 text = "Phantom Tokens: 0"
+
+[node name="Multiplier Label" type="Label" parent="."]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 361.0
+offset_top = 111.0
+offset_right = -644.0
+offset_bottom = -499.0
+text = "Multiplier: 1.00"
 
 [connection signal="timeout" from="Phantom Tokens Button/Multiplier Timer" to="." method="_on_multiplier_timer_timeout"]
